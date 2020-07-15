@@ -84,7 +84,7 @@ const styles = makeStyles(t => ({
 const ComingSoon = () => {
 	const classes = styles()
 	useEffect(() => {
-		document.title = "Qriocty Box"
+		document.title = "Qriocty Box | India's 1st practicing platform for competitive exams"
 	}, [])
 	return (<>
 		<Typography style={{fontSize:1,display:'hidden'}} variant='h1'>India's 1st practicing platform for competitive exams. We offer highly effective programs for practice of all competitive exam aspirants</Typography>
