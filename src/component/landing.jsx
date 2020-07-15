@@ -3,7 +3,7 @@ import { withStyles, makeStyles } from '@material-ui/styles';
 import { Theme } from '../theme';
 import Grid from '@material-ui/core/Grid';
 import { Typography, IconButton } from '@material-ui/core';
-import clsx from 'clsx' 
+import clsx from 'clsx'
 import Background from './background'
 
 import FacebookIcon from '@material-ui/icons/Facebook';
@@ -81,57 +81,57 @@ const styles = makeStyles(t => ({
 }))
 
 
-const	ComingSoon=()=> {
-		const  classes =styles()
-		useEffect(()=>{
-			document.title="Qriocty Box"
-		},[])
-		return (<>
-		
-			<Grid container alignItems='center' style={{
-				position: 'absolute', top: '0', left: 0,
-				width: '100%',
-				height: '100%',
-				background: Theme.boxColor,
-				opacity: .5
-			}} >
+const ComingSoon = () => {
+	const classes = styles()
+	useEffect(() => {
+		document.title = "Qriocty Box"
+	}, [])
+	return (<>
+		<Typography style={{fontSize:1,display:'hidden'}} variant='h1'>India's 1st practicing platform for competitive exams. We offer highly effective programs for practice of all competitive exam aspirants</Typography>
+		<Grid container alignItems='center' style={{
+			position: 'absolute', top: '0', left: 0,
+			width: '100%',
+			height: '100%',
+			background: Theme.boxColor,
+			opacity: .5
+		}} >
 
-			</Grid>
-			<Grid container justify='center' style={{
-				position: 'absolute', top: '0', left: 0,
-				// background: Theme.boxColor,
-				width: '100%',
-				height: '100%',
-				flexDirection:'column'
-				
-			}}>
-			<Background/>
-			<Grid container style={{position:'absolute'}}>
+		</Grid>
+		<Grid container justify='center' style={{
+			position: 'absolute', top: '0', left: 0,
+			// background: Theme.boxColor,
+			width: '100%',
+			height: '100%',
+			flexDirection: 'column'
+			
+		}}>
+			<Background />
+			<Grid container style={{ position: 'absolute' }}>
 				<Typography variant='h1' className={clsx(classes.fade, classes.Ctitle)}>
 					We are coming soon
 				</Typography> </Grid>
-				<Grid container style={{flexDirection:'column', position:'absolute',bottom:0,left:0}}>
+			<Grid container style={{ flexDirection: 'column', position: 'absolute', bottom: 0, left: 0 }}>
 				<Typography variant='h6' className={clsx(classes.fade, classes.Ctitle)}>
 					Stay tuned for something amazing
 				</Typography>
 				<Grid>
-					<IconButton  onClick={()=>{window.location='https://www.facebook.com/qrioctybox/'}}>
-						<FacebookIcon style={{color:"#fff"}}/>
+					<IconButton onClick={() => { window.location = 'https://www.facebook.com/qrioctybox/' }}>
+						<FacebookIcon style={{ color: "#fff" }} />
 					</IconButton>
-					<IconButton  onClick={()=>{window.location='https://www.youtube.com/channel/UCFI607_YfGNUmlw7E6HTu5g'}}>
-						<YouTubeIcon style={{color:"#fff"}}/>
+					<IconButton onClick={() => { window.location = 'https://www.youtube.com/channel/UCFI607_YfGNUmlw7E6HTu5g' }}>
+						<YouTubeIcon style={{ color: "#fff" }} />
 					</IconButton>
-					<IconButton onClick={()=>{window.location='https://www.instagram.com/qrioctybox/'}}>
-						<InstagramIcon style={{color:"#fff"}}/>
+					<IconButton onClick={() => { window.location = 'https://www.instagram.com/qrioctybox/' }}>
+						<InstagramIcon style={{ color: "#fff" }} />
 					</IconButton>
 				</Grid>
-				</Grid>
-
 			</Grid>
-		</>
-		);
-	}
+
+		</Grid>
+	</>
+	);
+}
 
 
 
-export default  (ComingSoon);
+export default (ComingSoon);

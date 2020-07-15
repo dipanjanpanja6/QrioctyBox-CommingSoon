@@ -99,8 +99,8 @@ const About = () => {
 					}}>
 					<Typography variant='h4' className={sty.heading} style={{ marginTop: 50 }}>
 						About Us
-						</Typography>
-					<Typography className={sty.para}					>
+						</Typography> 
+					<Typography variant='h1' className={sty.para}>
 						We are India's first economical<br /> ed-tech company providing practice
 							platform<br /> handcrafted for curious students.<br /> Launched in 2020, we
 							offer highly effective programs for<br /> practice of all competitive
